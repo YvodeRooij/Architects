@@ -57,6 +57,9 @@ const architectureGraph = new StateGraph(ArchitectureState)
   .addEdge(START, "supervisor")
   .compile({ checkpointer: memorySaver });
 
+// Export the graph instance for LangGraph Cloud
+export const graph = architectureGraph;
+
 import crypto from "crypto";
 
 // Stream the full state of the graph after each node using LangGraph's streaming API

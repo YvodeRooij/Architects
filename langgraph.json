@@ -1,12 +1,21 @@
 {
   "name": "architect",
+  "version": "1.0.0",
   "description": "Agent visualization assistant for LangGraph Cloud integration.",
   "language": "typescript",
+  "runtime": "node18",
   "tags": ["agent", "visualization", "nextjs", "langgraph"],
   "env": {
     "LANGGRAPH_ENDPOINT": "${LANGGRAPH_ENDPOINT}",
     "LANGGRAPH_ASSISTANT_ID": "${LANGGRAPH_ASSISTANT_ID}",
     "LANGGRAPH_API_KEY": "${LANGGRAPH_API_KEY}"
+  },
+  "requirements": {
+    "dependencies": {
+      "@langchain/core": "^0.1.0",
+      "@langchain/langgraph": "^0.0.8",
+      "dotenv": "^16.0.0"
+    }
   },
   "graphs": {
     "main": {
