@@ -1,0 +1,12 @@
+{
+  "name": "architect",
+  "description": "Agent visualization assistant for LangGraph Cloud integration.",
+  "entrypoint": "agent-visualization/app/langgraph/graph.ts",
+  "language": "typescript",
+  "tags": ["agent", "visualization", "nextjs", "langgraph"],
+  "env": {
+    "LANGGRAPH_ENDPOINT": "${LANGGRAPH_ENDPOINT}",
+    "LANGGRAPH_ASSISTANT_ID": "${LANGGRAPH_ASSISTANT_ID}",
+    "LANGGRAPH_API_KEY": "${LANGGRAPH_API_KEY}"
+  }
+}
