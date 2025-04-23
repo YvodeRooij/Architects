@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Agent visualization assistant for LangGraph Cloud integration.",
   "language": "typescript",
-  "runtime": "node18",
+  "node_version": "20",
   "tags": ["agent", "visualization", "nextjs", "langgraph"],
   "env": {
     "LANGGRAPH_ENDPOINT": "${LANGGRAPH_ENDPOINT}",
@@ -19,7 +19,7 @@
   },
   "graphs": {
     "main": {
-      "entrypoint": "agent-visualization/app/langgraph/graph.ts:graph",
+      "entrypoint": "./app/langgraph/graph.ts:graph",
       "description": "Main agent orchestration graph"
     }
   }
