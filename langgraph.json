@@ -19,7 +19,7 @@
   },
   "graphs": {
     "main": {
-      "entrypoint": "./app/langgraph/graph.ts:graph",
+      "entrypoint": "app/langgraph/graph:graph",
       "description": "Main agent orchestration graph"
     }
   }
