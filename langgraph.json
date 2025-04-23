@@ -10,7 +10,7 @@
   },
   "graphs": {
     "main": {
-      "entrypoint": "agent-visualization/app/langgraph/graph.ts",
+      "entrypoint": "agent-visualization/app/langgraph/graph.ts:graph",
       "description": "Main agent orchestration graph"
     }
   }
